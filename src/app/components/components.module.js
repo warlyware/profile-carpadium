@@ -1,4 +1,3 @@
-angular.module('profile-jonward.components', [
-    'profile-jonward.home',
-    'profile-jonward.landing'
+angular.module('profile-carpadium.components', [
+    'profile-carpadium.main'
 ]);

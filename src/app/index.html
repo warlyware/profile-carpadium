@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="profile-jonward">
+<html lang="en" ng-app="profile-carpadium">
 <head>
     <meta charset="UTF-8">
     <title>Jon Ward : Musician</title>
@@ -8,7 +8,7 @@
 </head>
 <body ng-controller="ApplicationController as appCtrl" class="full-height">
 
-    <div ui-view class="layout-row layout-align-center-center full-height content-height"></div>
+    <div ng-include="'components/main/main.tpl.html'"></div>
 
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
@@ -18,8 +18,6 @@
     <script src="application.module.js"></script>
     <script src="application.controller.js"></script>
     <script src="components/components.module.js"></script>
-    <script src="components/home/home.module.js"></script>
-    <script src="components/home/home.controller.js"></script>
-    <script src="components/landing/landing.module.js"></script>
+    <script src="components/main/main.module.js"></script>
 </body>
 </html>

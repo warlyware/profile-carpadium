@@ -1,6 +1,6 @@
-angular.module('profile-jonward', [
+angular.module('profile-carpadium', [
     'ui.router',
-    'profile-jonward.components'
+    'profile-carpadium.components'
 ])
 
 .config(['$stateProvider', function($stateProvider) {
@@ -11,15 +11,11 @@ angular.module('profile-jonward', [
             controller: 'ApplicationController',
             controllerAs: 'appCtrl'
         })
-        .state('landing', {
+        .state('main', {
             url: '/',
-            templateUrl: 'components/landing/landing.tpl.html'
-        })
-        .state('home', {
-            url: '/home',
-            templateUrl: 'components/home/home.tpl.html',
-            controller: 'HomeController',
-            controllerAs: 'HomeCtrl'
+            templateUrl: 'components/main/main.tpl.html',
+            controller: 'MainController',
+            controllerAs: 'mainCtrl'
         });
 }])
 
