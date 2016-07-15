@@ -8,9 +8,7 @@ angular.module('profile-carpadium')
                 controlArrows: true,
                 navigation: true,
             });
-        })
 
-        $window.onload = function() {
             $timeout(function() {
                 var carpadiumWord = document.getElementById('carpadium-word');
                 var southEastTour = document.getElementById('south-east-tour');
@@ -25,6 +23,6 @@ angular.module('profile-carpadium')
                 TweenLite.to(albumCover, 3, {autoAlpha:1, delay: 6});
 
             }, 500);
-        }
 
+        })
     }]);
