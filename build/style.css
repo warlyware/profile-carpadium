@@ -132,18 +132,18 @@ a {
   z-index: 15;
   top: 50%;
   left: 50%;
-  margin: -40px 0 0 -116px;
+  margin: -40px 0 0 -117px;
   opacity: 0;
 }
 
 #south-east-tour {
   position: absolute;
-  width: 235px;
+  width: 315px;
   height: 40px;
   z-index: 15;
   top: 50%;
   left: 50%;
-  margin: -40px 0 0 -116px;
+  margin: -40px 0 0 -157px;
   opacity: 0;
 }
 #social-media-toolbar {
