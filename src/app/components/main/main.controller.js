@@ -22,7 +22,7 @@ angular.module('profile-carpadium')
 
                 TweenLite.to(albumCover, 3, {autoAlpha:1, delay: 6});
 
-            }, 500);
+            }, 1000);
 
         })
     }]);
