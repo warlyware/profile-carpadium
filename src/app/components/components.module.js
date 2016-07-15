@@ -1,3 +1,1 @@
-angular.module('profile-carpadium.components', [
-    'profile-carpadium.main'
-]);
+angular.module('profile-carpadium.components', []);
