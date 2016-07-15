@@ -5,13 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <title>c a r p a d i u m</title>
     <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/jquery.fullPage.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body ng-controller="ApplicationController as appCtrl" class="full-height">
 
-    <div class="layout-row layout-fill layout-align-center-center" ng-include="'components/main/main.tpl.html'"
-    ng-controller="MainController as mainCtrl"></div>
+    <div id="fullpage">
+        <div class="section">
+            <div class="layout-row layout-fill layout-align-center-center" ng-include="'components/main/main.tpl.html'"
+            ng-controller="MainController as mainCtrl"></div>
+        </div>
+        <div class="section full-height">
+            <div class="layout-column layout-fill layout-align-center-space-around"
+            ng-include="'components/tour/tour.tpl.html'"></div>
+        </div>
 
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/fullpage.js/jquery.fullPage.js"></script>
     <script src="node_modules/gsap/src/minified/TweenMax.min.js"></script>
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>

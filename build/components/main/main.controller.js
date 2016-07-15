@@ -1,7 +1,14 @@
 angular.module('profile-carpadium')
-    .controller('MainController', ['$window','$timeout', function($window, $timeout) {
+    .controller('MainController', ['$window','$timeout', '$scope', function($window, $timeout, $scope) {
         console.log('Main Ctrl online');
 
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors:['main', 'tour'],
+                controlArrows: true,
+                navigation: true,
+            });
+        })
 
         $window.onload = function() {
             $timeout(function() {

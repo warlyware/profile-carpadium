@@ -21,6 +21,8 @@
     "angular-aria": "^1.5.5",
     "angular-material": "^1.1.0-rc4-master-06e7e99",
     "angular-ui-router": "^0.3.0",
-    "gsap": "^1.18.5"
+    "fullpage.js": "^2.8.2",
+    "gsap": "^1.18.5",
+    "jquery": "^3.1.0"
   }
 }
